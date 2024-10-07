@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact our expert team for cybersecurity, network solutions, and IT architecture. Get in touch with Lily Clarke, Henry Richards, and Charlotte Mitchell.">
+    <title>Contact Us</title>
+    <!-- jquery css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <!-- personal css -->
+    <link rel="stylesheet" href="mjstyle.css">
+</head>
+
+
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <h1>Blue<span>Network</span></h1>
+    </header>
+        
+   
+    <!-- navigation -->
+    <div class="navigation-bar">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+    </div>
+
+     <!-- welcome message takes user name from localstorage after completing form/then storing and showing from cookies -->
+    <div class="welcome-message">Welcome message goes here</div>
+
+    <div class="services-container">
+            
+        <!-- MAIN CONTENT STARTS HERE -->
+
+        <!-- heading -->
+        <h1 class="headings-style"> Your Journey to Solutions Starts Here  </h1>
+
+        <!-- container that holds forms -->
+        <div class="container-fixed-background background-3">
+
+            <div class="container-column ">
+                <img src="images/consultation.png" alt="graphic icon two persons">
+                <div class="text-container">
+                    <h1>Make the right move—talk to our experts today!</h1>
+                </div>
+            </div>
+        
+            
+            <div class="serviceCallBack-container">
+                
+                <!-- contact us form -->
+                <form action="#" method="post" id="contactForm" class="contactus-form" autocomplete="on">
+
+                    <p class="note-size" id="formInstructions"><span class="asterisk">*</span> indicates a required field.</p>
+
+                    <label class="form-label" for="name"><span class="asterisk">*</span> Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" minlength="1" maxlength="100" pattern="[a-zA-Z]+" spellcheck="false" autocomplete="name" required title="Please enter letters only">
+                    
+
+                    <label class="form-label" for="lastname"><span class="asterisk">*</span> Last Name</label>
+                    <input type="text" id="lastname" name="lastname" class="form-input" placeholder="Enter your last name" minlength="1" maxlength="100" pattern="[a-zA-Z]+" spellcheck="false" autocomplete="family-name" required title="Please enter letters only">
+                    
+                    
+                    <label class="form-label" for="email"> <span class="asterisk">*</span> Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" maxlength="254" spellcheck="false" autocomplete="email" required title="Please enter valid email - example@email.com">
+
+                    <label class="form-label" for="message"> <span class="asterisk">*</span> Message</label>
+                    <textarea  id="message" name="message" class="form-input" placeholder="Please enter your message here (minimum 30 characters)" rows="4" required minlength="30" maxlength="500" title="Must be at least 30 characters"></textarea>
+        
+                    <div id="charCount">0 / 500</div> <!-- Character count display -->
+
+                    <!-- when user clicks submit button, user details with message will be displayed -->
+                    <button type="submit" class="form-button">Submit</button>
+
+                </form>
+
+                <!-- displays message with user details on form completion -->
+                <div class="confirmation-container-contactus shadow" id="thankYouMessage" style="display: none;">
+
+                    <!-- message to the user -->
+
+                    <h1>Thank you, <span id="greetingName"></span>!</h1>
+                    <p>We have received your inquiry. One of our team members will contact you within one working day.</p>
+
+                    <!-- user details -->
+                    <p class="bold-p">Your details:</p>
+                    <div class="customer-details">
+                    <ul class="remove-list-style">
+                        <li>Name: <span id="userName"></span></li>
+                        <li>Last Name: <span id="userLastName"></span></li>
+                        <li>Email: <span id="userEmail"></span></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- heading -->
+        <div class="text-container-right">
+        <h1 class="headings-style"> Find us here</h1>
+        </div>
+
+        <!-- section with address and google maps -->
+        <div class="container-fixed-background background-3">
+
+            <div class="contact-details">
+                <h3> 📍 GET IN TOUCH</h3>
+                <p class="bold-p">124 Fake Street, BT7 77</p>
+                <p class="bold-p">Belfast, Northern Ireland</p>
+                <h3> 📞 Call us 028 777 777</h3>
+                <p class="bold-p">Monday to Friday</p>
+                <p class="bold-p"> ⏰ 08:00 to 18:00</p>
+            </div>
+
+            <div class="googleMaps">
+            <iframe class="styleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3217.86862965149!2d-5.925574485413949!3d54.6015126057233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610854a5178f89%3A0x8aeca8b3b888d705!2sThe%20Big%20Fish!5e0!3m2!1sen!2suk!4v1713993722942!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+
+        <footer>
+            <h1>COM 109 ASSIGNMENT 2024</h1>
+        </footer>
+
+    </div>
+
+    
+    <!-- scripts -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <script src="javascript/commonScript.js"></script>
+
+    <script src="javascript/contactus.js"></script>
+
+</body>
+</html>

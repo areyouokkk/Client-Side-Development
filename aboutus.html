@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact our expert team for cybersecurity, network solutions, and IT architecture. Get in touch with Lily Clarke, Henry Richards, and Charlotte Mitchell.">
+    <title>About Us</title>
+    <!-- jquery css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <!-- personal css -->
+    <link rel="stylesheet" href="mjstyle.css">
+</head>
+
+
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <h1>Blue<span>Network</span></h1>
+    </header>
+
+
+     <!-- navigation     -->
+    <div class="navigation-bar">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+    </div>
+
+     <!-- welcome message takes user name from localstorage after completing form/then storing and showing from cookies -->
+     <div class="welcome-message">Welcome message goes here</div>
+
+    
+    <!-- heading 1 -->
+    <h1 class="headings-style"> Discover Our Mission </h1>
+
+    <!-- first section -->
+        <section class="sections">
+
+            <p class="paragraph">
+                Welcome to BlueNetwork, where we are dedicated to enhancing your digital experience
+                and ensuring the utmost security for your online presence. As a leading force in the
+                realms of cybersecurity, networking, and IT solutions, we take pride in delivering excellence 
+                that propels your business forward.
+            </p>
+
+            <!-- hidden paragraphs -->
+            <p class="paragraph hidden-p">
+                Cybersecurity Expertise: Protecting your assets is our top priority. We employ cutting-edge technologies and methodologies to monitor, detect, and respond to threats in real time. Our cybersecurity services include vulnerability assessments, penetration testing, incident response, and compliance management, ensuring that your business is resilient against cyber threats.
+            </p>
+
+            <p class="paragraph hidden-p">
+                Advanced Networking Capabilities: We design, deploy, and manage sophisticated network infrastructures that are custom-built for the demands of your business. From secure Wi-Fi solutions to wide-area network (WAN) services, we ensure your connectivity is fast, reliable, and secure.
+            </p>
+
+            <p class="paragraph hidden-p">
+            IT Consultation and Support: BlueNetwork is your trusted partner in IT innovation. Our experts provide consultation on IT strategy, system integration, and digital transformation. We also offer ongoing support and management services to ensure your IT operations run smoothly, allowing you to focus on your core business.
+            </p>
+            <!-- hidden paragraphs end -->
+
+            <!-- button -->
+            <div id="hide-bttn" class="position-bttn">
+                <!-- when user clicks the button it will open the contact us page-->
+                <button id="enquirybttn" class="enquiry-bttn">Contact Us</button>
+            </div>
+
+            <!-- button -->
+            <!-- when user clicks the button, hidden paragraphs above will show -->
+            <button class="read-more-bttn position-bttn">Read More</button>
+
+        </section>  
+        
+        <!-- heading 2 -->
+        <div class="text-container-right">
+        <h1 class="headings-style"> Meet our Experts </h1>
+        </div>
+
+        <!-- section 2 -->
+        <section class="container-fixed-background background-3">
+
+            <!-- portrait image with team member -->
+                <section class="figure-container figure1">
+
+                    <img class="portrait image" src="images/portrait1.webp" alt="Headshot of team member Lily Clarke.">
+                    
+                        <h2>Lily Clarke</h2>
+        
+                        <p>
+                            our Cybersecurity Expert.
+                            Your go-to person for all things cybersecurity.
+                            Lily ensures that your digital world stays safe
+                            and secure. Feel free to reach out for any security-related
+                            queries or assistance.
+        
+                        </p>
+                             
+                </section>
+        
+                 <!-- portrait image with team member -->
+                <section class="figure-container figure2">
+        
+                    <img class="portrait image" src="images/portrait2.webp" alt="Headshot of team member Henry Richards.">
+                    
+                        <h2>Henry Richards</h2>
+        
+                        <p>
+                            our Network Solutions Specialist.
+                            Your go-to person for crafting seamless network solutions.
+                            Henry's expertise lies in optimizing connectivity and ensuring your networks run smoothly.
+                            Feel free to reach out for any networking queries or assistance.
+                        </p>
+        
+                </section>
+
+                 <!-- portrait image with team member -->
+                <section class="figure-container figure3">
+        
+                    <img class="portrait image" src="images/portrait3.webp" alt="Headshot of team member Charlotte Mitchell">
+                    
+                        <h2>Charlotte Mitchell</h2>
+        
+                        <p>
+                            our IT Solutions Architect.
+                            Your go-to person for innovative IT solutions. 
+                            Charlotte specializes in architecting solutions 
+                            tailored to your business needs. Feel free to reach out
+                            for any IT solutions or consultation.
+                        </p>
+        
+                </section>
+        </section> <!-- end of section 2 -->
+
+
+        <!-- heading 3 -->
+        <h1 class="headings-style" class="sub-heading">Empowering Businesses in the Digital Age</h1>
+
+
+        <!-- section 4 text -->
+        <section class="sections">
+            <p class="paragraph">
+                At BlueNetwork, we go beyond being service providers, we are your partners in navigating the
+                complexities of the digital world. Our commitment is to provide you with unparalleled 
+                cybersecurity, seamless networking, and innovative IT solutions that empower your business 
+                to thrive.
+            </p>
+
+            <p class="paragraph">
+                <!-- when user clicks the button it opens contact us page -->
+                <button id="enquirybttn" class="enquiry-bttn">Connect with us</button> and let BlueNetwork be the driving force behind your digital success.
+            </p>
+        </section>
+
+       
+  
+    <!-- MAIN CONTENT ENDS HERE -->
+       
+
+    <!-- footer -->
+    <div class="footer">
+
+        <footer>
+            <h1>COM 109 ASSIGNMENT 2024</h1>
+        </footer>
+
+    </div>
+    
+      <!-- scripts -->
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+  
+      <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  
+      <script src="javascript/commonScript.js"></script>
+
+      <script src="javascript/aboutus.js"></script>
+</body>
+</html>

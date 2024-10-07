@@ -1,0 +1,852 @@
+
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+
+
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: rgba(238, 240, 245, 0.726);
+
+    margin: 0;
+
+    /* hides overflow needed for animation of headings */
+    overflow-x: hidden;
+    
+}
+
+
+/* welcome message cookies/localstorage */
+.welcome-message {
+    display: none;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 35%; 
+    background-color: rgba(0,0,0,0.8); 
+    color: white; 
+    text-align: center; 
+    padding: 40px 0; 
+    box-sizing: border-box;
+    z-index: 1; 
+    font-size: 1.5em;
+    border-radius:0 0 8px;
+}
+
+
+/* shadow effect */
+.shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); 
+}
+
+
+/* button style  */
+
+.style-bttn {
+ 
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow*/
+}
+    
+.style-bttn:hover {
+    background-color:midnightblue;
+    transform: scale(1.05);
+}
+
+
+
+ /* ABOUT US STYLING, MAIN CONTENT*/
+
+.read-more-bttn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow*/
+
+    width: fit-content; 
+    display: inline-block; 
+}
+
+.read-more-bttn:hover {
+    background-color:midnightblue;
+    transform: scale(1.05);
+}
+.wrapper-aboutus {
+    min-height: calc(100vh - 260px);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+
+.sections {
+    font-size: 1.2em;
+    margin: 2%;
+}
+
+.contactus-button {
+    margin-left: 5px;
+}
+.paragraph {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+
+ /* CONTAINER FOR MIDDLE SECTION, CONTAINS 3 ELEMENTS */
+ 
+.info-section {
+    display: flex;
+    flex-wrap:row wrap;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 8px;
+
+    background-image: url(images/services_section.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+
+
+/* MAIN CONTAINER, contact us page includes FORM  */
+
+.wrapper {
+
+    background-image: url(images/2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: calc(100vh - 260px);
+    justify-content:space-around;
+
+    align-items: center;
+
+    margin: 2%;
+    border-radius: 8px;
+    
+}
+
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+
+/* HEADER STYLING */
+
+
+/* company name */
+.header h1 {
+    color: #41439c;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header {
+    background-image: url("images/1.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+
+/* NAVIGATION STYLING */
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow */
+
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    transform: scale(1.2);
+    color: #9ceaec; 
+    text-decoration: underline;
+}
+
+
+.navigation-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* STYLING FOR TEAM MEMBERS, PORTRAITS AND DESCRIPTION */
+
+
+.figure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    border-radius: 8px;
+
+    max-width: 300px;
+    background-color:  rgba(199, 230, 224, 0.877);
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow */
+}
+
+
+
+.image {
+    border-radius: 8px;
+}
+
+
+.figure-container h2 {
+    font-weight: bold;
+    margin: 5%;  
+    transition: transform 0.3s ease; 
+
+}
+
+.figure-container p {
+    margin: 5%;
+    font-size: 1.2em;
+}
+
+.portrait {   
+    height: 30vh;
+    transition: transform 0.3s ease; 
+}
+
+.figure-container:hover .portrait {
+    transition: transform 0.3s ease; 
+
+    transform: scale(1.1);
+}
+.figure-container:hover h2 {
+    transform: scale(1.1);
+}
+
+.figure-container:hover {
+    transition: transform 0.3s ease; 
+
+    background-color: gold;
+}
+
+
+
+
+/* FORM STYLING */
+
+
+.form-container h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.asterisk {
+    color:red;
+}
+
+.note-size {
+    font-size: 0.8em;
+}
+
+
+.contactus-form {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: auto;
+    min-width: 300px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow  */
+
+}
+
+/* styling for confirmation message on contact us form */
+
+.confirmation-container-contactus {
+    background-color:rgba(221, 236, 221, 0.904);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    text-align: center;
+
+    margin: 2%;
+    box-sizing: border-box;  
+    max-height: fit-content;
+    max-width: 350px;
+
+    transition: transform 0.2s ease;
+}
+
+.confirmation-container-contactus ul {
+    font-weight: bold;
+}
+.confirmation-container-contactus p {
+    font-size: 1.3em;
+}
+
+.confirmation-container-contactus:hover {
+    transform: scale(1.1);
+}
+
+.bold-p {
+    font-weight: bold;
+}
+
+.callBackFormStyle {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap:5px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.85);
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow  */
+}
+
+.form-label {
+    text-align: left;
+    font-weight: bold;
+    color:#333;
+    margin-left: 5px;
+}
+
+.form-input {
+    
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007BFF;
+    border-width: 2px;
+}
+
+
+textarea {
+    height: 15vh;
+}
+
+#charCount {
+    color: #333;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+.form-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow  */
+
+}
+
+.form-button:hover {
+    background-color:midnightblue;
+    transform: scale(1.05);
+}
+
+
+
+
+/* contact us page address and phone nr maps */
+
+.contact-details {
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 10px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/ 
+
+    margin: 2%;
+}
+
+.googleMaps {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/
+
+  
+    margin: 2%;
+
+}
+
+.styleMaps {
+    width: 300px;
+    height: 300px;
+    border: 0;
+}
+
+
+    
+.moto-container {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    max-width: 50%;
+}
+
+.moto-container h1 {
+    background-color: gold;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+.container-column img {
+    max-width: 300px;
+    max-height: 300px;
+    background-color: rgba(23, 233, 58, 0.5); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    max-width: fit-content;
+}
+
+.text-container h1 {
+    background-color: gold;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 2%;
+
+    align-self: center;
+
+    /* border-color: red;
+    border-width: 2px;
+    border-style: solid; */
+}
+.icon-style {
+
+    height: 100%;
+    width: 100%;
+}
+
+.testimonial-text p {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/
+}
+
+
+.text-container-right {
+    display: flex;
+    justify-content: right; 
+    align-items: right; 
+}
+
+
+/* slide in headings across website */
+
+.headings-style {
+    border-radius: 8px;
+    width: 60%;
+    text-align: center;
+    background-color: gold;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow  */
+
+    /* used for slide in animations */
+    transform: translateX(100vh);
+    transition: transform 1s ease, opacity 1s ease; 
+    opacity: 0; 
+
+}
+
+.headings-style:nth-of-type(even) {
+    transform: translateX(-100vh);
+}
+
+.headings-style.show {
+    transform: translateX(0);
+    opacity: 1; /* fully visible when in position */
+}
+
+
+
+/* containers used across the website, background is added through background classes */
+.container-fixed-background {
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: fit-content;
+    
+    margin: 2%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow  */
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+/* background images used for containers */
+.background-cyber {
+    background-image: url(images/services_cyber.webp);
+}
+
+.background-networking {
+    background-image: url(images/services_networking.webp);
+}
+
+.background-it {
+    background-image: url(images/services_it.webp);
+}
+
+.background-1 {
+    background-image: url(images/services_section.webp);
+}
+
+.background-2 {
+    background-image: url(images/1.webp);
+}
+
+.background-3 {
+    background-image: url(images/2.webp);
+}
+
+
+ /* container class used in home page to list services with icons */
+.services-window {
+    background-color: rgba(23, 233, 58, 0.5); 
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.services-window:hover {
+    transition: transform 0.3s ease;
+    background-color: gold;
+}
+
+.service-icon {
+    height: fit-content;
+
+    transition: transform 0.3s ease; 
+    display: block; 
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow */
+
+    border-radius: 8px;
+   
+}
+
+.services-window:hover .service-icon {
+    transform: scale(1.2); 
+}
+
+.position-bttn {
+    display: flex;
+    justify-content: right;
+    margin: 2%;
+}
+
+ /* home page make enquiry button */
+.enquiry-bttn {
+
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /*shadow*/
+
+    width: fit-content; 
+    display: inline-block; 
+}
+
+.learn-bttn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow  */
+}
+
+.learn-bttn:hover, .enquiry-bttn:hover {
+    background-color:midnightblue;
+    transform: scale(1.05);
+}
+
+
+/* SERVICES PAGE */
+
+/* callback form is hidden unless Request callback button is clicked */
+#callbackForm {
+    display: none;
+}
+
+.serviceCallBack-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    max-height: 100%;
+    max-width: 100%;
+
+      /* border-color: red;
+    border-width: 2px;
+    border-style: solid; */
+}
+
+.requestCallBack-card {
+    background-color: rgba(251, 255, 0, 0.808); 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content:  center;
+    margin: 2%;
+    box-sizing: border-box; 
+    max-height: fit-content;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* shadow  */
+
+
+
+    /* border-color: red;
+    border-width: 2px;
+    border-style: solid; */
+}
+
+
+
+.requestCallBack-card:hover img {
+    transform: scale(1);
+    background-position-x: 10px;
+    transition: transform 0.3s ease;
+   
+}
+
+.requestCallBack-card img {
+
+    border-radius: 8px;
+    justify-content: fit;
+    transform: scale(0.9);
+
+    transition: transform 0.3s ease;
+}
+.services-container {
+    min-height: calc(100vh - 260px);
+}
+
+
+.service-card {
+    background-color: rgba(238, 240, 245, 0.9);
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content:  center;
+    margin: 2%;
+    box-sizing: border-box;  
+    height: 100%;  
+
+    transition: transform 0.3s ease; 
+}
+
+.service-card:hover {
+    transition: transform 0.3s ease;
+    background-color: gold;
+    transform: scale(1.1);
+}
+.service-card ul{
+    margin: 2%;
+    font-weight: bold;
+
+}
+
+ /* removes dots for list */
+.remove-list-style {
+    list-style-type: none;
+}
+
+.confirmation-container {
+    background-color:rgb(74, 238, 74);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    text-align: center;
+
+    margin: 2%;
+    box-sizing: border-box;  
+    max-height: fit-content;
+    max-width: 300px;
+
+    transition: transform 0.2s ease;
+
+}
+
+.confirmation-container:hover {
+    transform: scale(1.1);
+    
+}
+.customer-details {
+    text-align: left;
+    font-size: larger;
+}
+
+
+/* FOOTER STYLING */
+
+.footer h1 {
+    color: white;
+    font-size: 15px;
+}
+.footer {
+    background-color: #444;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+/* CONTENT ORDER */
+
+.figure1 {
+    order: 1;
+}
+
+.figure2 {
+    order: 2;
+}
+
+.figure3 {
+    order: 3;
+}
+
+.form-order {
+    order: 4;
+}
+
+.footer {
+    order: 5;
+}
