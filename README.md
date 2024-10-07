@@ -16,4 +16,4 @@ interactive design and event handling techniques (for example, animations,
 banners, image effects, date/time, form validation, calculator, and 
 cookies/LocalStorage) are required. You will be required to develop a video to 
 effectively express the key features in action and the degree of personalization 
-to evidence the produc�on of well-formed web pages.
+to evidence the production of well-formed web pages.
